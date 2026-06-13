@@ -1,0 +1,22 @@
+export const navLinks = [
+    {
+        title:'home',
+        href:'/'
+    },
+    {
+        title:'about',
+        href:'/about'
+    },
+    {
+        title:'contact',
+        href:'/contact'
+    },
+    {
+        title:'mehrab',
+        href:'/mehrab'
+    },
+    {
+        title:'mehrab',
+        href:'/mehrab'
+    },
+]
