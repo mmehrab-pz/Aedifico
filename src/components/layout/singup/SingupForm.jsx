@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/field";
 import { Input } from "@/components/ui/input";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function SignupForm({ className, ...props }) {
   return (
@@ -119,7 +120,7 @@ export default function SignupForm({ className, ...props }) {
               </Field>
 
               <FieldDescription className="text-center">
-                Already have an account? <a href="#">Sign in</a>
+                Already have an account? <Link href={'/login'}>Sign in</Link>
               </FieldDescription>
             </FieldGroup>
           </form>
