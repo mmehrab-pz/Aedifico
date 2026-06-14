@@ -126,11 +126,11 @@ export default function SignupForm({ className, ...props }) {
 
           <div className="relative hidden bg-muted md:block">
             <Image
-              src="/images/mountains.jpg"
+              src="/images/liquid.jpg"
               alt="Image"
               className="absolute inset-0 h-full w-full object-cover "
-                width={800}
-                height={600}
+                width={5000}
+                height={2500}
             />
           </div>
         </CardContent>

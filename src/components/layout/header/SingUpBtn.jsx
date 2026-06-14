@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 export default function SingUpBtn() {
   return (
-    <Button className={"capitalize"} size='lg'>
+    <Button className={"capitalize"} size='lg' asChild>
         <Link href={'./singup'}>sing up</Link>
     </Button>
   )
