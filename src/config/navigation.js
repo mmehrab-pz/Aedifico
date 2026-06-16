@@ -15,8 +15,4 @@ export const navLinks = [
         title:'mehrab',
         href:'/mehrab'
     },
-    {
-        title:'mehrab',
-        href:'/mehrab'
-    },
 ]
