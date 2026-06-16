@@ -1,8 +1,8 @@
 import React from 'react'
 import LoginBtn from './LoginBtn'
-import SingUpBtn from './SingUpBtn'
 import DarkLightModeBtn from './DarkLightModeBtn'
 import Navbar from './Navbar'
+import SignUpBtn from './SignUpBtn'
 
 export default function Header() {
   return (
@@ -17,7 +17,7 @@ export default function Header() {
         <DarkLightModeBtn></DarkLightModeBtn>
         <div className='flex gap-1'>
            <LoginBtn></LoginBtn>
-        <SingUpBtn></SingUpBtn>
+        <SignUpBtn></SignUpBtn>
         </div>
       </div>
     </header>

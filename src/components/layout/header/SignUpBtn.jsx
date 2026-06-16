@@ -3,10 +3,10 @@ import React from 'react'
 import { Search, Settings, User } from "lucide-react";
 import Link from 'next/link';
 
-export default function SingUpBtn() {
+export default function SignUpBtn() {
   return (
     <Button className={"capitalize"} size='lg' asChild>
-        <Link href={'./singup'}>sing up</Link>
+        <Link href={'/signup'}>sign up</Link>
     </Button>
   )
 }

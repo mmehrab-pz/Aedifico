@@ -1,10 +1,10 @@
 import Puls from '@/components/ui/Puls'
-import SingupForm from '@/components/layout/singup/SingupForm'
 import React from 'react'
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
 import { ArrowLeft } from 'lucide-react';
 import Alert1 from '@/components/ui/Alert1'
+import SignupForm from '@/components/layout/signup/SignupForm'
 
 export default function page() {
   return (
@@ -15,7 +15,7 @@ export default function page() {
             <ArrowLeft />
           </Link>
         </Button>
-        <SingupForm></SingupForm>
+        <SignupForm></SignupForm>
         <Puls></Puls>
     </main>
   )

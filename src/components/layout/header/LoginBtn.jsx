@@ -7,7 +7,7 @@ import React from 'react'
 export default function LoginBtn() {
   return (
   <Button className={"capitalize"} variant="secondary" size='lg' asChild>
-    <Link href={'login'}>login</Link>
+    <Link href={'/login'}>login</Link>
   </Button>
   )
 }
