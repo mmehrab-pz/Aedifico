@@ -20,7 +20,7 @@ export default function Navbar() {
             return(
                 <NavigationMenuItem key={i}>
                     <NavigationMenuLink asChild >
-                        <Link href={link.href} className={"capitalize text-[15px]"}>{link.title}</Link>
+                        <Link href={link.href} className={"capitalize text-white text-[15px]"}>{link.title}</Link>
                     </NavigationMenuLink>
                 </NavigationMenuItem>
             )

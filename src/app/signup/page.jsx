@@ -3,7 +3,6 @@ import React from 'react'
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
 import { ArrowLeft } from 'lucide-react';
-import Alert1 from '@/components/ui/Alert1'
 import SignupForm from '@/components/layout/signup/SignupForm'
 
 export default function page() {
