@@ -17,8 +17,10 @@ import { useState } from "react";
 import { loginUser } from "@/services/auth.service";
 import { useRouter } from "next/navigation";
 import { toast } from "sonner";
+import { useUserStore } from "@/store/userStore";
 
 export default function LoginForm({ className, ...props }) {
+  const setAuth = useUserStore((state) => state.setAuth);
   const router = useRouter();
   const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState({
@@ -42,8 +44,7 @@ export default function LoginForm({ className, ...props }) {
     setLoading(true);
     try {
       const data = await loginUser(formData);
-      localStorage.setItem("token", data.jwt);
-      localStorage.setItem("user", JSON.stringify(data.user));
+      setAuth(data.user, data.jwt);
       router.push("/dashboard");
       toast.success("Login successful", {
         position: "top-center",
