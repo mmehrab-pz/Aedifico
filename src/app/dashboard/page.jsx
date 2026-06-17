@@ -10,9 +10,17 @@ import {
 } from "@/components/ui/breadcrumb";
 import { Separator } from "@/components/ui/separator";
 import { SidebarInset, SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
-import React from "react";
+import React, { useEffect } from "react";
+import { useRouter } from "next/navigation";
 
-export default function page() {
+export default function DashboardPage() {
+  useEffect(() => {
+  const token = localStorage.getItem("token");
+
+  if (!token) {
+    router.push("/login");
+  }
+}, []);
   return (
     <SidebarProvider>
       <AppSidebar />
