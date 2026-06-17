@@ -1,7 +1,6 @@
 import { create } from "zustand";
 import { persist } from "zustand/middleware";
 
-
 export const useUserStore = create(
   persist(
     (set) => ({
@@ -11,7 +10,9 @@ export const useUserStore = create(
 
       setAuth: (user, jwt) => set({ user, jwt }),
 
-      clearAuth: () => set({ user: null, jwt: null }),
+      logout: () => {
+        set({ user: null, jwt: null });
+      },
 
       setHydrated: () => set({ hydrated: true }),
     }),
@@ -21,6 +22,6 @@ export const useUserStore = create(
       onRehydrateStorage: () => (state) => {
         state?.setHydrated?.();
       },
-    }
-  )
+    },
+  ),
 );
