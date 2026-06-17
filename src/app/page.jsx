@@ -13,7 +13,7 @@ export default function Home() {
         loop
         playsInline
         preload="metadata"
-        className="absolute top-0 left-0 w-full h-full object-cover"
+        className="absolute top-0 left-0 w-full object-cover"
       >
         <source src="/vid/hero_bg.mp4" type="video/mp4" />
       </video>
